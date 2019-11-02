@@ -1,0 +1,31 @@
+﻿<Application x:Class="List.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:List"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="contentTitle">
+            <Setter Property="Label.HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
+            <Setter Property="Label.Focusable" Value="False"></Setter>
+            <Setter Property="Label.Foreground" Value="#BB86FC"></Setter>
+        </Style>
+
+        <Style x:Key="tableRow">
+            <!--<Setter Property="Control.Foreground" Value="#0066bb"></Setter>-->
+            <!--<Setter Property="Control.Background" Value="#aa44bb"></Setter>-->
+            <Setter Property="Control.BorderBrush" Value="Black"></Setter>
+            <Setter Property="Control.BorderThickness" Value="1,1,1,1"></Setter>
+        </Style>
+
+        <Style x:Key="tableBackground">
+            <!--<Setter Property="Control.Foreground" Value="#0066bb"></Setter>-->
+            <!--<Setter Property="Control.Background" Value="#aa44bb"></Setter>-->
+            <Setter Property="Control.BorderThickness" Value="1,1,1,1"></Setter>
+            <Setter Property="Control.BorderBrush" Value="#000000"></Setter>
+            <Setter Property="Control.Background" Value="#ffffff"></Setter>
+            <!--<Setter Property="" Value="8"></Setter>-->
+            
+        </Style>
+    </Application.Resources>
+</Application>
