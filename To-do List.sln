@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProject", "To-do Lis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "List", "List\List.csproj", "{DBD48571-3CC0-428C-AADC-F9898DEDE527}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragAndDropList", "DragAndDropList\DragAndDropList.csproj", "{2F2D815F-9CEC-4E46-9135-E38D431EA68C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DBD48571-3CC0-428C-AADC-F9898DEDE527}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBD48571-3CC0-428C-AADC-F9898DEDE527}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBD48571-3CC0-428C-AADC-F9898DEDE527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F2D815F-9CEC-4E46-9135-E38D431EA68C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F2D815F-9CEC-4E46-9135-E38D431EA68C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F2D815F-9CEC-4E46-9135-E38D431EA68C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F2D815F-9CEC-4E46-9135-E38D431EA68C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

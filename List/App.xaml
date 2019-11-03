@@ -12,20 +12,14 @@
         </Style>
 
         <Style x:Key="tableRow">
-            <!--<Setter Property="Control.Foreground" Value="#0066bb"></Setter>-->
-            <!--<Setter Property="Control.Background" Value="#aa44bb"></Setter>-->
             <Setter Property="Control.BorderBrush" Value="Black"></Setter>
             <Setter Property="Control.BorderThickness" Value="1,1,1,1"></Setter>
         </Style>
 
         <Style x:Key="tableBackground">
-            <!--<Setter Property="Control.Foreground" Value="#0066bb"></Setter>-->
-            <!--<Setter Property="Control.Background" Value="#aa44bb"></Setter>-->
             <Setter Property="Control.BorderThickness" Value="1,1,1,1"></Setter>
             <Setter Property="Control.BorderBrush" Value="#000000"></Setter>
             <Setter Property="Control.Background" Value="#ffffff"></Setter>
-            <!--<Setter Property="" Value="8"></Setter>-->
-            
         </Style>
     </Application.Resources>
 </Application>
