@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace YouTube_Tutorial
 {
@@ -22,7 +10,36 @@ namespace YouTube_Tutorial
 	{
 		public MainWindow()
 		{
+
+			// Don't use list before it is initialised or it will be null
 			InitializeComponent();
+
+			LstPersons.ItemsSource = GetPersonList();
+		}
+
+
+		public List<Person> GetPersonList()
+		{
+			var personList = new List<Person> ();
+
+			personList.Add(new Person { Name = "Joshua", Email = "j2osh@gmail.com" });
+			personList.Add(new Person { Name = "Bob", Email = "bob@gmail.com" });
+
+			return personList;
+		}
+
+		private void NewPersonSelected(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+		{
+			var person = LstPersons.SelectedItem as Person;
+			TxtName.Text = person.Name;
+			TxtEmail.Text = person.Email;
 		}
 	}
+
+	public class Person
+	{
+		public string Name { get; set; }
+		public string Email { get; set; }
+	}
+
 }

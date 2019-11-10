@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="380"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <!--<ListBox x:Name="LstPersons" Grid.Row="0" SelectionChanged="NewPersonSelected"></ListBox>-->
+
+        <ListBox x:Name="LstPersons" ItemsSource="{Binding}" SelectionChanged="NewPersonSelected">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock  Text="{Binding Name}"></TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
         
+        <StackPanel Grid.Row="1" Margin="10">
+            <Button x:Name="BtnAddPerson" Content="AddPerson" HorizontalAlignment="Right"></Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="2" Grid.RowSpan="2">
+            <Label Content="Name:"/>
+            <TextBox x:Name="TxtName" Margin="20,0"/>
+            <Label Content="Email:"/>
+            <TextBox x:Name="TxtEmail" Margin="20,0"/>
+        </StackPanel>
     </Grid>
 </Window>
